@@ -4,7 +4,7 @@ var getIndex = function(callback){
 	callback(idx);
 }
 atc.run({
-	"time":44444,
+	"time":10000,
 	"url":"https://github.com/jun85664396/auto-web-crawler",
 	"idxFunc":getIndex,
 	"rule":{"title":"$('title').text()"},
