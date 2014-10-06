@@ -1,0 +1,28 @@
+{
+  "name": "auto-web-crawler",
+  "version": "0.0.1",
+  "description": "auto web crawler",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jun85664396/auto-web-crawler"
+  },
+  "keywords": [
+    "autoWebCrawler",
+    "node",
+    "crawler",
+    "webCrawler"
+  ],
+  "author": "JunSangPil",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jun85664396/auto-web-crawler/issues"
+  },
+  "homepage": "https://github.com/jun85664396/auto-web-crawler",
+  "dependencies": {
+    "jsdom": "~1.0.1"
+  }
+}
