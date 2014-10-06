@@ -1,13 +1,13 @@
 var atc = require("../");
 var getIndex = function(callback){
-	var idx = [54];
+	var idx = [""];
 	callback(idx);
 }
 atc.run({
 	"time":44444,
-	"url":"http://egleye.co.kr/community/notice_view?idx=",
+	"url":"https://github.com/jun85664396/auto-web-crawler",
 	"idxFunc":getIndex,
-	"rule":{"contents":"$('html').html()"},
+	"rule":{"title":"$('title').text()"},
 	"done":function(res){
 		console.log(res);
 	}
