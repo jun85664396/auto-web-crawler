@@ -2,7 +2,7 @@ var awc = require("../");
 var getIndex = function(callback){
 	var idx = [""];
 	callback(idx);
-}
+};
 awc.run({
 	"time":10000,
 	"url":"https://github.com/jun85664396/auto-web-crawler",
