@@ -38,3 +38,6 @@ auto-web-crawler
 + url `String` //
 + idxFunc `Function` // Require parameter callback
 + rule `Hash` //
+
+#use
++ jsdom
