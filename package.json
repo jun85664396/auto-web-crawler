@@ -1,6 +1,6 @@
 {
   "name": "auto-web-crawler",
-  "version": "0.0.2",
+  "version": "0.0.4",
   "description": "auto web crawler",
   "main": "index.js",
   "scripts": {

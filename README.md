@@ -34,7 +34,7 @@ auto-web-crawler
     
 ##Parameter
 
-+ time `int` //
++ time `int` // Default One hour
 + url `String` //
 + idxFunc `Function` // Require parameter callback
 + rule `Hash` //
