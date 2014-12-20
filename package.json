@@ -1,28 +1,30 @@
 {
-  "name": "auto-web-crawler",
-  "version": "0.0.4",
-  "description": "auto web crawler",
-  "main": "index.js",
-  "scripts": {
-    "test": "node test/*.js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/jun85664396/auto-web-crawler"
-  },
-  "keywords": [
-    "autoWebCrawler",
-    "node",
-    "crawler",
-    "webCrawler"
-  ],
-  "author": "JunSangPil",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/jun85664396/auto-web-crawler/issues"
-  },
-  "homepage": "https://github.com/jun85664396/auto-web-crawler",
-  "dependencies": {
-    "jsdom": "~1.0.1"
-  }
+	"name": "awc",
+	"version": "0.0.5",
+	"description": "auto web crawler",
+	"main": "index.js",
+	"scripts": {
+		"test": "node test/*.js"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/jun85664396/auto-web-crawler"
+	},
+	"keywords": [
+		"autoWebCrawler",
+		"node",
+		"crawler",
+		"webCrawler",
+		"awc"
+	],
+	"author": "JunSangPil",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/jun85664396/auto-web-crawler/issues"
+	},
+	"homepage": "https://github.com/jun85664396/auto-web-crawler",
+	"dependencies": {
+		"jsdom": "~1.0.1",
+		"fs": "0.0.2"
+	}
 }

@@ -1,14 +1,17 @@
 var awc = require("../");
 var getIndex = function(callback){
-	var idx = [""];
+	var idx = [8911,8912,8913,8914,8915];
 	callback(idx);
 };
+var start = new Date();
 awc.run({
-	"time":10000,
-	"url":"https://github.com/jun85664396/auto-web-crawler",
+	"minute":1,
+	"url":"https://github.com/joyent/node/issues/",
 	"idxFunc":getIndex,
-	"rule":{"title":"$('title').text()"},
+	"rule":{"title":"$('.gh-header-title').text().trim()"},
 	"done":function(res){
+		var end = new Date();
+		console.log((end.getTime()-start.getTime())/1000);
 		console.log(res);
 	}
 });
