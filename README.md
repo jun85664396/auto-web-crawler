@@ -3,41 +3,38 @@ auto-web-crawler
 
 ##Installation
 
-    npm install auto-web-crawler
+    npm install awc
     
 ##Usage
 
-    var awc = require(auto-web-crawler); 
+    var awc = require("../");
     
-    var time = 60*24 // 1 Day
+    var getIndex = function(callback){
     
-    var url = "https://github.com/search?q=node&type=Repositories&utf8=%E2%9C%93&p=" // Ignore page index
-    
-    var idxFunc = function(callback){ // Require callback parameter
-      var idx = [1]; // https://github.com/search?q=node&type=Repositories&utf8=%E2%9C%93&p=1
-      /*  You made function  */
-      callback(idx); // callback parameter Idx Array
+    	var idx = [8911,8912,8913,8914,8915]; //url Suffixes.
+    	
+    	callback(idx);
     };
     
-    var rule = {"title":"$('title').text()"}; // { key : jquerySelector }
-    
     awc.run({
-      "time":time, 
-      "url":url, 
-      "idxFunc":idxFunc,
-      "rule":rule,
-      "done":function(response){
-        console.log(response) // {"title" : "Search · node"}
-        // Response => rule { Key : SelectorResult }
-      }
+	    "minute":1, // If Minute Parameter is null,Minute Default Value is 60.
+	    "url":"https://github.com/joyent/node/issues/", //Idx Default Prefix.
+	    "idxFunc":getIndex, //Index List
+	    "rule":{"title":"$('.gh-header-title').text().trim()"}, //Jquery Selector Rule.
+	    "done":function(res){
+	    
+    		console.log(res); //Return Value { '0': { title: 'events.markdown document improvements\n #8911' } ...}
+    		
+	    }
     });
     
 ##Parameter
 
-+ time `int` // Default One hour
-+ url `String` //
++ minute `int` 
++ url `String`
 + idxFunc `Function` // Require parameter callback
-+ rule `Hash` //
++ rule `Hash`
 
 #use
 + jsdom
++ fs
