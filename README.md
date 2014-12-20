@@ -11,8 +11,9 @@ auto-web-crawler
     
     var getIndex = function(callback){
     
-    	var idx = [8911,8912,8913,8914,8915]; //url Suffixes.
-    	
+    	//Write your code
+    	//ex) var idx = [8911,8912,8913,8914,8915]; //url Suffixes.
+  
     	callback(idx);
     };
     
@@ -24,10 +25,15 @@ auto-web-crawler
 	    "done":function(res){
 	    
     		console.log(res); //Return Value { '0': { title: 'events.markdown document improvements\n #8911' } ...}
+    		//Write your code
     		
 	    }
     });
     
+##Test
+    
+    $ node test.js
+    	
 ##Parameter
 
 + minute `int` 
