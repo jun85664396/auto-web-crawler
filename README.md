@@ -7,7 +7,7 @@ auto-web-crawler
     
 ##Usage
 
-    var awc = require("../");
+    var awc = require("awc");
     
     var getIndex = function(callback){
     
