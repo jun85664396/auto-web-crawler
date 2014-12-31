@@ -1,6 +1,9 @@
 auto-web-crawler
 ================
 
+###0.0.5 Update
++ add sorting
+
 ##Installation
 
     npm install awc
