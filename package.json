@@ -24,7 +24,6 @@
 	},
 	"homepage": "https://github.com/jun85664396/auto-web-crawler",
 	"dependencies": {
-		"jsdom": "~1.0.1",
-		"fs": "0.0.2"
+		"jsdom": "~1.0.1"
 	}
 }
